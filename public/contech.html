@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/4.9.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/4.9.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/4.9.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/4.9.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/4.9.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+     <link rel="stylesheet" href="css/style.css"/>
+
+     <style>
+            #map {
+              position: relative;
+              height: 400px;
+              max-width: 100%;
+             }
+          </style>
+
+</head>
+<body>
+        
+  
+        <div class="logo center-align ">
+        <img class="img-logo responsive-img" src="img/contech.png" width="300px" alt="logo contech automação">
+        </div>
+        <div class="parallax-container">
+                <!-- <h5>Soluções comerciais</h5> -->
+                <div class="parallax"><img src="img/parallax-room.jpg">                   
+                </div>
+                
+              </div>
+              <div class="section white">
+                <div class="row container">
+                  <h5 class="header">A Contech</h5>
+                  <p class="grey-text text-darken-3 lighten-3">Fundada em 1998 a Contech Automação Comercial tem como objetivo oferecer soluções em automação comercial, tanto em software quanto em equipamentos.</p>  
+                  <p class="grey-text text-darken-3 lighten-3">Sempre acompanhando as tendências do mercado tecnológico e as inúmeras alterações na legislação tributária oferecendo aos clientes simplificação na gestão de seus empreendimentos.</p> 
+                    <p class="grey-text text-darken-3 lighten-3">Conheça nossos produtos e serviços, faça parte dessa constante evolução. </p>      
+        
+                </div>
+              </div>
+              <div class="parallax-container">
+                <div class="parallax"><img src="img/parallax-idea.png"></div>
+              </div>
+              <div class="section white">
+                    <div class="row container">
+                            <div class="mkt row">          
+                                    <div class="col s12 m4 l4">
+                                      <div class="center-align">
+                                      <img class="responsive-img " src="img/ic-software.png" alt="icon-software">
+                                    </div>
+                                      <h5>Softwares</h5>
+                                      <p>Gerência Comercial</p>
+                                      <p>Esse software permite total controle dos processos da empresa como:
+                                        <ul>                    
+                                          <li class="valign-wrapper">
+                                            <i class="material-icons prefix">done</i>Cotação de compras</li>                    
+                                          <li class="valign-wrapper">
+                                            <i class="material-icons prefix">done</i>Entrada/Saida de produtos</li>
+                                          <li class="valign-wrapper">
+                                            <i class="material-icons prefix">done</i>Controle de caixa</li>
+                                          <li class="valign-wrapper">
+                                            <i class="material-icons prefix">done</i>Controle de vendas</li>
+                                          <li class="valign-wrapper">
+                                            <i class="material-icons prefix">done</i>Relatórios diversos</li>
+                                        </ul>
+                                      </p>
+                                      <p>Aplicativo Fiscal</p>
+                                      <p>Em complemento ao Gerência Comercial, o Aplicativo Fiscal compões das funcões de emissão de notas fiscais, cupons fiscais, geração de arquivos para sintegra e todas as obrigatoriedades fiscais da legislação brasileira.</p>
+                                    </div>
+                                    <div class="col s12 m4 l4">
+                                        <div class="center-align">
+                                        <img class="responsive-img" src="img/ic-shop.png" alt="icon-shop">
+                                        </div>
+                                      <h5>Loja</h5>
+                                      <p>Contando com uma loja física na cidade de Passos-MG, a Contech também dispõe de uma linha completa de computadores e equipamentos para sua empresa como balanças, leitores de codigo de barras, impressoras, monitores, notebooks, suprimentos, equipamentos de redes, energia e muito mais, com garantia, suporte e as melhores condições em preço e prazo.</p>
+                                      
+                                    </div>
+                                    <div class="col s12 m4 l4">
+                                        <div class="center-align">
+                                        <img class="responsive-img" src="img/ic-support.png" alt="icon-support">
+                                        </div>
+                                      <h5>Suporte</h5>
+                                      <p>A equipe Contech tem mão de obra especializada no suporte técnico, contando com profissionais formados nas ares de tecnologia com vasto conhecimento para que sua empresa nunca pare tudo isso visando sempre o melhor atendimento tanto por acesso remoto quanto presencial. Na sede da empresa encntra o atendimento em balção, com manutenção de computadores e notebooks além de intervenção técnica das impressoras fiscais da marca Urmet Daruma.</p>
+                                    </div>
+                              
+                                  </div>
+
+                    </div>
+
+              </div>
+
+
+<div class="parallax-container">
+                <div class="parallax"><img src="img/parallax-contact.jpg"></div>
+              </div>
+              <div class="section white">
+                    <div class="row container">
+
+                            <h5>Solicite um Orçamento</h5>
+                            <p>Escolha como podemos melhor atendê-lo.</p>
+                            <div class="row">
+                                    <ul>                        
+                                        <div class="col s12 m4 l4">
+                                            <h5 class="valign-wrapper">
+                                                <i class="material-icons prefix">headset_mic</i>Telefone</h5>
+                                            <li>(35) 3521-4799</li>
+                                        </div>                        
+                                        <div class="col s12 m4 l4">
+                                            <h5 class="valign-wrapper">
+                                                <i class="material-icons prefix">call_split</i>Ramais</h5>                      <li>#1 Vendas</li>
+                                            <li>#2 Suporte técnico</li>
+                                            <li>#3 Financeiro</li>                                    
+                                        </div>
+                                        <div class="col s12 m4 l4">
+                                            <h5 class="valign-wrapper">
+                                                <i class="material-icons prefix">add_shopping_cart</i>Representantes</h5>
+                                 <li>(35) 9.9981-2244 Cassio Garlati</li>
+                                            <li>(35) 9.9116-9901 Cesar Spineli</li>
+                                            <li>(35) 9.9919-8471 Thiago Tomé</li>                                   
+                                        </div>
+                                    </ul>
+                                </div>
+                                <div class="divider"></div>
+
+                                <h5 class="valign-wrapper">
+                                        <i class="material-icons prefix">mail</i>Email</h5>
+                                    
+                                <p>Envie suas informações de contato e um de nossos representantes irá lhe atender.</p>
+                                
+
+
+                            <div class="row">
+                              <form class="col s12">
+                                <div class="row">
+                                  <div class="input-field col s12 m6 l3">
+                                    <!-- <i class="material-icons prefix">account_circle</i> -->
+                                    <input id="icon_prefix" type="text" class="validate">
+                                    <label for="icon_prefix">Nome</label>
+                                  </div>
+                                  <div class="input-field col s12 m6 l4">
+                                    <!-- <i class="material-icons prefix">phone</i> -->
+                                    <input id="icon_telephone" type="tel" class="validate">
+                                    <label for="icon_telephone">Telefone</label>
+                                  </div>      
+                                    <div class="input-field col s12 m12 l5">
+                                        <!-- <i class="material-icons prefix">mail</i> -->
+                                      <input id="email" type="email" class="validate">
+                                      <label for="email" data-error="wrong" data-success="right">Email</label>
+                                    </div>                       
+                                </div>    
+                              </form>
+                              <button class="btn waves-effect waves-light right" type="submit" name="action">Enviar
+                                  <i class="material-icons right">send</i>
+                                </button> 
+                            </div>
+                            
+
+
+                            <div class="divider"></div>
+                            
+                            <!-- <h4>Contato</h4>
+                            <p>Conheça nossos canais de atendimento</p>
+                            
+                            <h5>Email</h5>
+                            <div class="row">
+                                <form class="col s12">
+                                  <div class="row">
+                                    <div class="input-field col s12 m6 l3">
+                                      <i class="material-icons prefix">account_circle</i>
+                                      <input id="icon_prefix" type="text" class="validate">
+                                      <label for="icon_prefix">Nome</label>
+                                    </div>
+                                    <div class="input-field col s12 m6 l4">
+                                      <i class="material-icons prefix">phone</i>
+                                      <input id="icon_telephone" type="tel" class="validate">
+                                      <label for="icon_telephone">Telefone</label>
+                                    </div>      
+                                      <div class="input-field col s12 m12 l5">
+                                          <i class="material-icons prefix">mail</i>
+                                        <input id="email" type="email" class="validate">
+                                        <label for="email" data-error="wrong" data-success="right">Email</label>
+                                      </div> 
+                                      <div class="input-field col s12">
+                                          <i class="material-icons prefix">mode_edit</i>
+                                          <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                          <label for="textarea1">Escreva aqui...</label>
+                                        </div>                      
+                                  </div>    
+                                </form>
+                                <button class="btn waves-effect waves-light right" type="submit" name="action">Enviar
+                                    <i class="material-icons right">send</i>
+                                  </button> 
+                              </div>
+                              <div class="divider"></div>
+                            
+                               -->
+                     
+
+                            
+                             
+
+                              
+                              
+                            
+                            
+                                              
+                                <div class="row">
+                                <div class="col s12 m4 l3">
+                                        <h5 class="valign-wrapper">
+                                                <i class="material-icons prefix">store</i>Loja</h5>
+                                                <!-- <p>Venha conhecer nosso showroom</p> -->
+                                <p>Rua Doutor Carvalho, 1007</p>
+                                <p>Centro - Passos - Minas Gerais</p>
+                                <p>CEP 37900-100</p>
+                              </div>
+                            
+                            <div class="col s12 m8 l9" id="map"></div>
+                            <script>
+                              function initMap() {
+                                var uluru = {lat: -20.730890, lng: -46.605916};
+                                
+                                var map = new google.maps.Map(document.getElementById('map'), {
+                                  zoom: 16,
+                                  center: uluru
+                                });
+                                var marker = new google.maps.Marker({
+                                  position: uluru,
+                                  map: map
+                                });
+                              }
+                            </script>
+                            <script async defer
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtZoVEfOHtWqQss4oxU9VFjHjUEdtkJCA&callback=initMap">
+                            </script>
+                            </div>
+
+                        </div>
+                    </div>
+                            <div class="parallax-container">
+                                    
+                                    <div class="parallax"><img src="img/parallax-trabalhe.jpg">                   
+                                    </div>
+                                    
+                                  </div>
+                                  <div class="section white">
+                                    <div class="row container">
+                                            <h5>Trabalhe Conosco</h5>
+                                            <p>Envie-nos seu currículo com seus dados e suas especialidades</p>
+                                            <div class="row">
+                                                <form class="col s12">
+                                                    <div class="file-field input-field">
+                                                        <div class="btn">
+                                                          <span>File</span>
+                                                          <input type="file">
+                                                        </div>
+                                                        <div class="file-path-wrapper">
+                                                          <input class="file-path validate" type="text" placeholder="Arquivo em PDF">
+                                                        </div>
+                                                      </div>
+                                                  
+                                                </form>
+                                                <button class="btn waves-effect waves-light right" type="submit" name="action">Enviar
+                                                    <i class="material-icons right">send</i>
+                                                  </button> 
+                                              </div>     
+                                              <div class="divider"></div>
+                                    
+
+             
+                        </div>
+                    </div>
+
+
+
+              <footer class="page-footer">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col l6 s12">
+                          <h5 class="white-text">Contech Automação Comercial Ltda</h5>
+                          <p class="grey-text text-lighten-4">Acompanhe as novidades nas redes sociais</p>
+                        </div>
+                        <div class="col l4 offset-l2 s12">
+                          <h5 class="white-text">Links</h5>
+                          <ul>
+                            <li><a class="grey-text text-lighten-3" href="#!">Quem Somos</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Produtos e Serviços</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Contato</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Trabalhe Conosco</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="footer-copyright">
+                      <div class="container">
+                      © 2018 Copyright
+                      <a class="grey-text text-lighten-4 right" href="#!">Desenvolvido por SpineliDev</a>
+                      </div>
+                    </div>
+                  </footer>
+            
+               <!--Import jQuery before materialize.js-->
+     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+     <script type="text/javascript" src="js/materialize.min.js"></script>
+     <script type="text/javascript" src="js/main.js"></script>
+    
+</body>
+</html>

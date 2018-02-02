@@ -1,0 +1,36 @@
+.container h1{
+    display: none;
+}
+
+div.logo.center-align{
+    margin: 10px;
+}
+
+div.mkt.row{
+    text-align: justify;
+}
+div.mkt.row h5{
+    text-align: center;
+}
+
+.parallax-container {     
+    height: 50vh;
+  }
+
+.parallax-container h5{    
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, .3);   
+}  
+div#map{
+    margin-top: 15px;
+}
+
+div.section.white{
+    padding-top: 50px;    
+}
+
+div.section.white h5{    
+    padding-bottom: 30px;
+}
